@@ -1,0 +1,60 @@
+#!/bin/sh
+#===========================================================#
+#	AUTHOR：hdf 
+#	DATE  ：2017-12-04
+#===========================================================#
+
+export LANG=en_US.utf8
+
+
+#解决一些权限问题
+sudo chown pi:pi /home/LT -R
+sudo chmod 777 /home/LT -R
+cd /home/LT/Bin/LTController
+
+#set -x
+
+lt_kill()
+{
+	sudo killall MainController.py
+#	./MainController.py > /dev/null &
+
+}
+
+lt_restart()
+{ 
+	lt_kill
+	./MainController.py
+}
+
+
+
+lt_help()
+{ 
+	echo "Please enter 'start' to start lingtrack's program."
+	echo "Please enter 'kill' to kill lingtrack's program."
+	echo "Please enter 'restart' to restart lingtrack's program."
+}
+
+
+case "$1" in
+	start)
+#		printf "\terminal start at $(date +'%Y-%m-%d %H:%M:%S')\n" >> $LOG_FILE
+		./MainController.py
+	;;
+	kill)
+#		printf "\nlt kill at $(date +'%Y-%m-%d %H:%M:%S')\n" >> $LOG_FILE
+		lt_kill
+	;;
+	restart)
+#		printf "\nlt restart at $(date +'%Y-%m-%d %H:%M:%S')\n" >> $LOG_FILE
+		lt_restart 
+	;;
+	*)
+		lt_help
+		exit 1
+	;;
+esac
+
+
+

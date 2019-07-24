@@ -1,0 +1,81 @@
+#Group number for each base station
+BS_GROUP = 1,
+
+#Signal frequency of each base station
+BS_FREQS = 22000,
+
+#address of each base station
+BS_ADDRS = 0,
+
+#Coordinates of each base station, in format x1, y1, z1, x2, y2, z2, ..., in cm
+BS_LOCATIONS = 0.0, 0.0, 273.5
+
+#Start angle of each base station, in radian, [0, 2*Pi)
+BS_START_ANGLES = 0.0,
+
+#Orientation angles (yaw, pitch, roll) of each base station, in radian, [0, 2*Pi)
+BS_ORIENTATIONS = 0.0, 0.0, 0.0
+
+BS_INFO = 0,
+
+#1 means open; 0 close
+SENSOR_CHANNELS = 1
+
+#Coordinates of each sensor in the robot's local frame, in format x1, y1, z1, x2, y2, z2, ..., in cm
+SENSOR_OFFSETS = 0, 0, 0
+
+#Sensors' height from the ground, in cm
+RECEIVER_HEIGHT = 1
+
+#A unique numerical id for each receiver
+RECEIVER_ID = 1
+
+#TCP address of remote host that receives location results
+REMOTE_MONITOR_ADDR = ""
+
+#TCP port of remote host that receives location results
+REMOTE_MONITOR_PORT = 0
+
+OPTIC_PUB_PORT = 6100
+
+LOCATION_PUB_PORT = 6102
+
+LT_HUB_ADDR = 127.0.0.1
+
+LOC_ENGINE_ADDR = 127.0.0.1
+
+MAX_RECEIVER_SPEED = 300
+
+PLC_SERIAL_PORT = 0
+
+TCP_LISTEN_PORT = 5000
+
+UDP_LISTEN_PORT = 1500
+
+DATA_DIR = ../Data/
+
+DATA_DUMP_FILE = ""
+
+DATA_PLAY_FILE = ""
+
+DATA_PLAY_MODE = 0
+
+FILE_DEBUG_FLAG = 1
+
+FILTER_DEBUG_FILE = ""
+
+LOG_LEVEL = 4
+
+RAW_OUTPUT_FLAG = 0
+
+TERM_NAME = ""
+
+ODOM_PARAMETERS = ""
+
+ODOM_INPUT_OPTION = 0
+
+OPTIC_DATA_INPUT_DEV = 0
+
+LOC_DATA_OUTPUT_DEV = 0
+
+LOC_DATA_OUTPUT_PROTOCOL = 0

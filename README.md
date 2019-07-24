@@ -1,1 +1,1 @@
-# lt_controller
+灵踪科技控制器项目

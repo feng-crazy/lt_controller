@@ -1,12 +1,13 @@
-# Binaries for programs and plugins
-*.exe
-*.exe~
-*.dll
-*.so
-*.dylib
-
-# Test binary, build with `go test -c`
-*.test
-
-# Output of the go coverage tool, specifically when used with LiteIDE
-*.out
+empty.txt
+/test.log
+/test.log.2018-06-25
+/tmp_test.py
+/tmp_test1.py
+__pycache__
+.idea
+/test_message
+/basestation/config
+config
+ctrller.log
+build
+dist
